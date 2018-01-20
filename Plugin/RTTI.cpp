@@ -127,14 +127,12 @@ static LPCSTR attributeLabel(UINT attributes)
 // Attempt to serialize a managed name until it succeeds
 static BOOL serializeName(ea_t ea, __in LPCSTR name)
 {
-    for (int i = 0; i < 1000000; i++)
-    {
-        char buffer[MAXSTR]; buffer[SIZESTR(buffer)] = 0;
-        _snprintf(buffer, SIZESTR(buffer), "%s_%d", name, i);
-        if (set_name(ea, buffer, (SN_NON_AUTO | SN_NOWARN)))
-            return(TRUE);
-    }
-    return(FALSE);
+	if (force_name(ea, name, (SN_NON_AUTO | SN_NOWARN)))
+		return(TRUE);
+	else if (force_name(ea, name, SN_NON_AUTO))
+		return(TRUE);
+
+	return(FALSE);
 }
 
 
@@ -275,7 +273,7 @@ static void doStructRTTI(ea_t ea, tid_t tid, __in_opt LPSTR typeName = NULL, BOO
 	if(tid == s_type_info_ID)
 	{
         _ASSERT(typeName != NULL);
-		UINT nameLen    = (strlen(typeName) + 1);
+		size_t nameLen    = (strlen(typeName) + 1);
         UINT structSize = (offsetof(RTTI::type_info, _M_d_name) + nameLen);
 
 		// Place struct
@@ -395,7 +393,7 @@ static int readIdaString(ea_t ea, __out LPSTR buffer, int bufferSize)
     if (it != stringCache.end())
     {
         LPCSTR str = it->second.c_str();
-        int len = strlen(str);
+		size_t len = strlen(str);
         if (len > bufferSize) len = bufferSize;
         strncpy(buffer, str, len); buffer[len] = 0;
         return(len);
@@ -403,7 +401,7 @@ static int readIdaString(ea_t ea, __out LPSTR buffer, int bufferSize)
     else
     {
         // Read string at ea if it exists
-        int len = get_max_strlit_length(ea, 0, ALOPT_IGNHEADS);
+        size_t len = get_max_strlit_length(ea, 0, ALOPT_IGNHEADS);
         if (len > 0)
         {
             if (len > bufferSize) len = bufferSize;

@@ -203,7 +203,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NO_DEBUG;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -229,7 +229,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x86_win_vc_32;$(IDADIR)\idasdk\lib\x86_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x86_win_vc_32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile />
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -263,7 +263,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__X64__;WIN32;NDEBUG;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NO_DEBUG;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -289,7 +289,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x64_win_vc_32;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x64_win_vc_32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -326,7 +326,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__EA64__;WIN32;NDEBUG;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NO_DEBUG;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -352,7 +352,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x86_win_vc_64;$(IDADIR)\idasdk\lib\x86_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x86_win_vc_32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -389,7 +389,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__X64__;__EA64__;WIN32;NDEBUG;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NO_DEBUG;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -415,7 +415,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x64_win_vc_64;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x64_win_vc_64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -447,7 +447,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEVMODE;_DEBUG;WIN32;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -471,7 +471,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x86_win_vc_32;$(IDADIR)\idasdk\lib\x86_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x86_win_vc_32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile />
       <SubSystem>Windows</SubSystem>
@@ -499,7 +499,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__X64__;_DEVMODE;_DEBUG;WIN32;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -523,7 +523,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x64_win_vc_32;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x64_win_vc_32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
@@ -554,7 +554,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEVMODE;__EA64__;_DEBUG;WIN32;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NO_DEBUG;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -578,7 +578,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x86_win_vc_64;$(IDADIR)\idasdk\lib\x86_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x86_win_vc_32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
@@ -609,7 +609,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;$(IDASUPPORT)\SupportLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);$(IDADIR)\idasdk\include;$(QTDIR)\include;$(IDASUPPORT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__X64__;_DEVMODE;__EA64__;_DEBUG;WIN32;_WINDOWS;_USRDLL;__NT__;__IDP__;__VC__;QT_NO_DEBUG;QT_NAMESPACE=QT;QT_NO_UNICODE_LITERAL;_CRT_SECURE_NO_WARNINGS;MATERIAL_DESIGN_STYLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -633,7 +633,7 @@
       <AdditionalDependencies>ida.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(IDADIR)\idasdk\lib\x64_win_vc_64;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDASUPPORT)\IDA_WaitEx;$(IDASUPPORT)\IDA_SegmentSelect;$(IDASUPPORT)\IDA_OggPlayer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IDASUPPORT)\lib;$(IDADIR)\idasdk\lib\x64_win_qt;$(IDADIR)\idasdk\lib\x64_win_vc_64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>
       </ProgramDatabaseFile>
